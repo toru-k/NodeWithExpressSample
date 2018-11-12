@@ -16,5 +16,8 @@
     "url": "https://github.com/toru-k/NodeWithExpressSample/issues"
   },
   "homepage": "https://github.com/toru-k/NodeWithExpressSample#readme",
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
