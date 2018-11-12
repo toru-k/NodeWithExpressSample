@@ -12,6 +12,6 @@ router.put('/:user', noImpl);
 
 router.delete('/:user', noImpl);
 
-router.use('/:user/article', noImpl);
+router.use('/:user/article', article);
 
 export default router;
