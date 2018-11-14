@@ -18,8 +18,10 @@
   "homepage": "https://github.com/toru-k/NodeWithExpressSample#readme",
   "keywords": [],
   "dependencies": {
+    "@types/mongodb": "^3.1.14",
     "express": "^4.16.4",
-    "express-list-endpoints": "^4.0.0"
+    "express-list-endpoints": "^4.0.0",
+    "mongodb": "^3.1.9"
   },
   "devDependencies": {
     "@types/express": "^4.16.0",
