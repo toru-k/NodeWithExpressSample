@@ -1,11 +1,14 @@
 import * as Express from 'express';
+const url = require('url');
 
 export default function noImplemented(
   req: Express.Request,
   res: Express.Response,
   next: Express.NextFunction,
 ) {
-    res.status(200).json(NOVELS);
+    const urlParam = url.parse(req.url, true);
+    const index: string = urlParam.path.slice(1, 2);
+    req.res.status(200).json(NOVELS[index]);
 }
 
 export const NOVELS = [

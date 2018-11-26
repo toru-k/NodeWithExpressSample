@@ -3,8 +3,11 @@ import expressListEndpoints from 'express-list-endpoints';
 import articles from './routes/articles';
 import auth from './routes/auth';
 import user from './routes/user';
+const cors = require('cors');
 
 const app = Express();
+
+app.use(cors());
 
 app.use('/articles', articles);
 app.use('/auth', auth);
